@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Task Integrator</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<style>
+    .font {
+        font-size: 4rem;
+    }
+
+    .center {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <div class="font center">
+        Page in construction... &#128679;
+    </div>
+</body>
+
+<script>
+    window.addEventListener('load', () => {
+        fetch("http://localhost:8080/api/hello").then(response => {
+            response.json().then(json => {
+                console.log(json)
+                alert("Response from backend: " + json.message)
+            }).catch(err => {
+                console.error("Cannot map response: ", err)
+            })
+        }).catch(err => {
+            console.error(err)
+        })
+    });
+
+</script>
+
+</html>

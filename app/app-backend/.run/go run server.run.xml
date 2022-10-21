@@ -1,0 +1,17 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="go run server" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <module name="notion-task-integrator" />
+    <working_directory value="$PROJECT_DIR$/app/app-backend" />
+    <envs>
+      <env name="ENV" value="DEVELOPMENT" />
+      <env name="FRONTEND_APP_SOURCES" value="../app-frontend/dist/public" />
+      <env name="SERVER_PORT" value="3000" />
+      <env name="NOTION_API_KEY" value="PutYourKeyHere" />
+    </envs>
+    <kind value="PACKAGE" />
+    <package value="github.com/wkrzyzanowski/notion-task-integrator" />
+    <directory value="$PROJECT_DIR$" />
+    <filePath value="$PROJECT_DIR$/app/app-backend/main.go" />
+    <method v="2" />
+  </configuration>
+</component>
